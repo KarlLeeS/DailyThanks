@@ -14,22 +14,13 @@ Project Introduction : https://www.notion.so/20-07-28-20-08-10-7aa3b6f66f984022a
 
 ---
 
-For Expo simulation,
-
-> you can scan the below qr code.
-
-For Android device operation,
-
-> First, fork this repo and 'git clone' in your local storage.
-> Then,
-
-#### Install
+### Install
 
 ```
 $ npm(yarn) install
 ```
 
-#### Start
+### Start
 
 ```
 $ npm(yarn) start
