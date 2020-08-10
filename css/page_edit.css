@@ -1,0 +1,195 @@
+
+@import url("../'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap'");
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+#wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header{
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	z-index: 10;
+}
+
+#container{
+	position: absolute; 
+	top: 10%;
+	width: 100%;
+	height: 90%;
+	font-size: 20px;
+}
+
+#write{
+	width: 100%;
+	height: 100%;
+}
+
+#write_header{
+	height: 10%;
+	clear: both;
+}
+
+#write_header .write_cancle{
+	position: relative;
+	float: left;	
+	display: block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	/* borer: 1px solid red; */
+	box-sizing: border-box;
+}	
+#write_header .write_cancle .cancle{
+	position: absolute;
+	left: 10%;
+	top: 40%;
+	display: inline-block;
+	width: 40%;
+	height: 70%;
+	background-image: url("../img/left-arrow.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#write_header .write_submit{x
+	position: relative;
+	float: right;
+	display: block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	border: 0;
+	background-color: white;
+	box-sizing: border-box;
+}		
+
+#write_header .write_submit .submit{
+	position: absolute;
+	display: inline-block;
+	right: 20%;
+	top: 40%;
+	width: 20%;
+	height: 65%;
+	background-image: url("../img/submit.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#container {
+	padding-top: 20px;
+}
+#container form{
+	width: 100%;
+	height: 100%;
+}
+
+#container #textarea{
+	width: 100%;
+	height: 40%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#container textarea{
+	height: 100%;
+	width:70%;
+	border: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1.2em;
+}
+
+#container .filebox{
+	display: block;
+	width: 100%;
+	height: 60%;
+}
+
+.filebox label {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #999;
+	text-align: center;
+	line-height: 2;
+	vertical-align: middle;
+	background-color: black;
+	cursor: pointer;
+	border-bottom-color: #e2e2e2;
+}
+
+.filebox label .file_inner{
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	width: 65%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.filebox label .file_inner img{
+	display: block;
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+	z-index: 1000;
+}
+
+.filebox label .file_inner p{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 0.7em;
+	color: #fff;
+}
+
+.filebox input[type="file"] {
+	/* 파일 필드 숨기기 */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+#container label{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+#container .submit{
+	position: absolute;
+	right: 0;
+	top: -6.3%;
+	display: inline-block;
+	width: 20%;
+	height: 10%;
+	background-image: url("../img/submit.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+#container #submit{
+	display: none;
+}
+
+

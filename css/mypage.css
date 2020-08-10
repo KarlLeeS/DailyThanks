@@ -1,0 +1,279 @@
+
+	@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body,
+	html {
+		width: 100%;
+		height: 100%;
+	}
+
+	#wrap {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#wrap #header {
+		position: relative;
+		height: 10%;
+		border-bottom: 1px solid lightgray;
+		box-sizing: border-box;
+	}
+
+	#wrap #header .header_cancel {
+		position: relative;
+		float: left;
+		width: 25%;
+		height: 100%;
+		/* border: 1px solid blue; */
+		box-sizing: border-box;
+	}
+
+	#wrap #header .header_title {
+		position: relative;
+		float: left;
+		width: 75%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	#wrap #header h1 {
+		display: inline-block;
+		position: absolute;
+		width: 70%;
+		height: 50%;
+		top: 20%;
+		left: 10%;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 1.7em;
+		color: #444;
+	}
+
+	#wrap #header .cancle {
+		position: absolute;
+		display: inline-block;
+		width: 60%;
+		height: 50%;
+		left: 10%;
+		top: 30%;
+		text-align: center;
+		/* border: 1px solid green; */
+		background-image: url("../img/left-arrow.svg");
+		background-size: 80% 80%;
+		background-repeat: no-repeat;
+		/* position: absolute; */
+		/* left: 15px; */
+	}
+
+	#wrap #container {
+		height: 80%;
+		box-sizing: border-box;
+	}
+
+	#wrap #container #profile {
+		width: 100%;
+		height: 20%;
+		/* margin-bottom: 5px; */
+		/* float:left */
+	}
+
+
+	#wrap #container #profile::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	#wrap #container #profile .profile_pic {
+		float: left;
+		width: 30%;
+		height: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		/* border: 1px solid pink; */
+	}
+
+	#wrap #container #profile .profile_pic a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	#wrap #container #profile .profile_pic img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		/* overflow: hidden; */
+
+		vertical-align: top;
+	}
+
+
+	#wrap #container #profile .profile_desc {
+		margin-top: 15px;
+		padding-left: 10px;
+		padding-right: 15px;
+		float: left;
+		width: 70%;
+		font-family: 'Noto Sans KR', sans-serif;
+		box-sizing: border-box;
+		/* border: 1px solid pink; */
+	}
+
+
+	#container #profile .profile_desc .author_name,
+	#container #profile .profile_desc .author_content {
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 1.1em;
+	}
+
+
+
+	#content {
+		height: 89%;
+	}
+
+
+	#wrap #container #content a {
+		position: relative;
+		display: block;
+		float: left;
+		width: 32%;
+		height: 160px;
+	}
+
+	#wrap #container #content a:nth-child(3n+1) {
+		margin: 1% 1% 0px 1%;
+		box-sizing: border-box;
+	}
+
+	#wrap #container #content a:nth-child(3n+2) {
+		margin: 0px;
+		margin-top: 1%;
+		box-sizing: border-box;
+	}
+
+	#wrap #container #content a:nth-child(3n) {
+		margin: 1% 1% 0px 1%;
+		box-sizing: border-box;
+	}
+
+	#container #content p {
+		width: 100%;
+		height: 100%;
+	}
+
+	#container #content img {
+		width: 100%;
+		height: 100%;
+		/* z-index: 100; */
+	}
+
+
+	#container #content .desc {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		font-size: 1rem;
+		padding: 4px;
+		background-color: #fefefe;
+		opacity: 0.6;
+		font-family: 'Nanum Brush Script', cursive;
+		color: black;
+		font-weight: bold;
+		box-sizing: border-box;
+	}
+
+	/* 
+							#wrap #container #content{
+								float: left;
+								border: 1px s
+								olid black;
+							} */
+
+
+	#menu {
+		position: fixed;
+		width: 100%;
+		background-color: #2f2f2f;
+		height: 7%;
+		bottom: 0;
+		color: white;
+		z-index: 100;
+	}
+
+	#menu a {
+		position: relative;
+		display: block;
+		float: left;
+		width: 33.333%;
+		height: 100%;
+		color: white;
+		box-sizing: content-box;
+	}
+
+	#menu a div {
+		width: 100%;
+		height: 100%;
+	}
+
+	#menu a .icon {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 20%;
+		height: 50%;
+		box-sizing: content-box;
+	}
+
+	#menu a .icon-library {
+		background-image: url("../img/book-solid.svg");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		box-sizing: content-box;
+	}
+
+	#menu a .icon-write {
+		background-image: url("../img/edit.svg");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		box-sizing: content-box;
+	}
+
+	#menu a .icon-mypage {
+		background-image: url("../img/my-life.svg");
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		box-sizing: content-box;
+	}
+
+	#menu a:hover {
+		background-color: white;
+	}
+
+	.blind {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}

@@ -1,0 +1,113 @@
+
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	body,html{
+		width: 100%;
+		height: 100%;
+	}
+
+	#wrap{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		/* margin-top: 20%; */
+		/* border: 1px solid red; */
+		box-sizing: border-box;
+	}
+
+	#wrap #header{
+		text-align: center;
+		color: #72afc1;
+		font-weight: normal;
+		height: 20%;
+		/* margin: 10% 0; */
+		padding: 10% 0;
+		border-radius: 20px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 1.3em;
+		box-sizing: border-box;
+	}
+
+	#wrap #login,
+	#wrap #signup,
+	#wrap #findid,
+	#wrap #findpw {
+		/* margin: 3px 5px; */
+		padding-top: 10px;
+		height: 80%;
+	}
+
+	#login p,#signup p,#findid p, #findpw p{
+		width: 100%;
+		height: 20%;
+	}
+
+	::placeholder{
+		color: #bdbdbd;
+	}
+
+	#login input.form ,
+	#signup input.form,
+	#findid input.form,
+	#findpw input.form{
+		display: block;
+		border: 1px solid #e8e8e8;
+		border-radius: 5px;
+		background-color: #f6f6f6;
+		width: 90%;
+		height: 70px;
+		margin: 5px auto;
+		padding: 10px 0 10px 5px;
+		font-size: 1.5em;
+		box-sizing: border-box;
+	}
+
+	#login input.submit,
+	#signup input.submit,
+	 #findid input.submit,
+	 #findpw input.submit{
+		display: block;
+		border: 1px solid #e8e8e8;
+		border-radius: 30px;
+		background-color: #5db075;
+		width: 90%;
+		color :#fff;
+		height: 70px;
+		margin: 5px auto;
+		padding: 5px 0 5px 5px;
+		font-size: 2em;
+		box-sizing: border-box;
+	}
+
+	#login #func_list{
+		margin-top: 10px;
+		height: 50%;
+	}
+	#login .func{ 
+		display: block;
+		width: 50%;
+		margin : 0 auto;
+		margin-bottom: 20px;
+		/* text-align: justify; */
+		text-decoration: none;
+		
+		text-align: center;
+		font-size: 1.5em;
+		color: #5db075;
+	} 
+
+	
+
+	.blind {
+		display: none;
+	}
+
+	.active {
+		display: block;
+	}

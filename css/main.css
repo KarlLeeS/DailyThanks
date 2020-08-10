@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body,html{
+width: 100%;
+height: 100%;
+}
+
+#wrap{
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+#header{
+position: relative;
+width: 100%;
+height: 15%;
+text-align: center;
+background-color: #fefefe;
+box-sizing: border-box;
+z-index: 10;
+}
+
+#header .title{
+position: absolute;
+display: inline-block;
+width: 50%;
+height: 50%;
+top: 0; 
+left: 0;
+right: 0; bottom: 0;
+margin: auto;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 1.7em;
+line-height: normal;
+text-align: center;
+color: #444;
+}
+
+
+#header #search_input{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header #search_input form{
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	height: 40%;
+	/* z-index: 10000; */
+}
+
+
+.search_input_text{
+	display: block;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	background-color: #f6f6f6;
+	width: 90%;
+	height: 70px;
+	margin: 5px auto;
+	padding: 10px 0 10px 5px;
+	font-size: 1.5em;
+	box-sizing: border-box;
+}
+
+#header #search_input #search_input_text{
+	display: inline-block;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	background-color: #f6f6f6;
+	float: left;
+	width: 70%;
+	height: 100%;
+	padding: 10px 0 10px 5px;
+	margin-left: 30px;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+#header #search_input #search_submit{
+	display: inline-block;
+	position: absolute;
+	width: 8%;
+	height: 100%;
+	background-image: url("../img/search.svg");
+	background-repeat: no-repeat;
+	background-color: white;
+	float: right;
+	right: 8%;
+	top: 3px;
+	z-index: 1000;
+}
+
+
+
+
+#header .search{
+	position: absolute;
+	display: inline-block;
+	width: 15%;
+	height: 23%;
+	right: 0%;
+	top: 35%;
+	background-image: url("../img/search.svg");
+	background-repeat: no-repeat;
+}
+
+#container{
+	width: 100%;
+	height: 80%;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+#container #banner{
+	text-align: center;
+	height: 11%;
+} 
+
+#container #banner img{
+	width: 100%;
+	height: 100%;
+}
+
+#container #content{
+	height: 89%;
+}
+
+#container #content a{
+	position: relative;
+	display: block;
+	width: 32%;
+	float: left;
+	height: 160px;
+} 
+
+
+#container #content a:nth-child(3n+1){  
+	margin:1% 1% 0px 1%;
+	box-sizing: border-box;
+}
+
+#container #content a:nth-child(3n+2){  
+	margin: 0px;
+	margin-top: 1%;
+	box-sizing: border-box;
+}
+#container #content a:nth-child(3n){ 
+	margin:1% 1% 0px 1%;
+	box-sizing: border-box;
+}	
+
+
+#container #content a p{
+	width: 100%;
+	height: 100%;
+}
+
+#container #content a p img{
+	width: 100%;
+	height: 100%;
+}
+
+#container #content .desc{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top: 50%;
+	width:100%
+	left: 0;
+	height: 50%;
+}
+
+#container #content .thank{
+	height: 100%;
+	font-size: 1rem;
+	background-color: #fefefe;
+	padding: 4px;
+	box-sizing: border-box;
+	opacity: 0.6;
+	font-family: 'Nanum Brush Script', cursive;
+	color: black;
+	font-weight: bold;
+}
+
+
+#menu{
+	position: fixed;
+	width: 100%;
+	background-color: #2f2f2f;
+	height: 7%;
+	bottom: 0%;
+	color: white;
+	z-index: 100;
+}
+
+#menu a{
+	position: relative;
+	display: block;
+	float: left;
+	width: 33.333%;
+	height: 100%;
+	color: white;
+	box-sizing: content-box;
+} 
+
+#menu a div{
+	width: 100%;
+	height: 100%;
+}
+
+#menu a .icon{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 20%;
+	height: 50%;
+	box-sizing: content-box;
+}
+
+#menu a .icon-library{ 
+	background-image: url("../img/book-solid.svg");
+	background-size: auto 100%; 
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+}
+
+#menu a .icon-write{ 
+	background-image: url("../img/edit.svg");
+	background-size: auto 100%; 
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+}
+
+#menu a .icon-mypage{ 
+	background-image: url("../img/my-life.svg");
+	background-size: auto 100%; 
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+}
+
+a:hover
+{
+	background-color: white;
+}
+.blind {
+	display: none;
+}
+
+.active {
+	display: block;
+}
