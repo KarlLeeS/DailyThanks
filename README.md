@@ -1,6 +1,4 @@
-# DediCats-client
-
----
+# DailyThanks
 
 ## Introduction 
 
