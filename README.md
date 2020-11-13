@@ -67,4 +67,4 @@ heroku
 
 ---
 
-Copyrights by Songift. For the further use, please contact me via `tlagksshl4@gmail.com`.
+Copyrights by KarlLee. For the further use, please contact me via `tlagksshl4@gmail.com`.
